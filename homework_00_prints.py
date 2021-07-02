@@ -25,7 +25,7 @@ import requests
 
 
 #Escribe aqui tu numero de cuenta. Si tienes dudas consulta el README.md
-numeroDeCuenta = ''
+numeroDeCuenta = '123456789'
 
 
 '''
@@ -54,10 +54,10 @@ def tarea0():
     dm = file_classes.distribution_manager(inputs)
     dm.load_timeseries()
     dm.compute()
-    # You must return 
-    # median rounded to 4 decimals
-    # var_95 rounded to 6 decimals
-    # is_normal 
+    # prints
+    print('ric ' + inputs.variable_name + ' | median = ' +  str(dm.median))
+    print('ric ' + inputs.variable_name + ' | VaR 95% = ' +  str(dm.var_95))
+    print('ric ' + inputs.variable_name + ' | is normal = ' +  str(dm.is_normal))
     return 
 
 
