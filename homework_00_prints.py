@@ -57,9 +57,11 @@ def tarea0():
     
     # return a list
     x = []
-    x.append(np.round(dm.median,4))
-    x.append(np.round(dm.var_95,4))
-    x.append(dm.is_normal)
+    
+    x.append(np.round(dm.median,4)) # append to x the median with 4 decimals
+    x.append(np.round(dm.var_95,4)) # append to x the value at risk 95% with 4 decimals
+    x.append(dm.is_normal) # append to x if the distribution is normal: true or false 
+    
     return x
 
 
