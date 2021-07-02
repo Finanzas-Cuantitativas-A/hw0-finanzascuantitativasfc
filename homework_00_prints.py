@@ -55,7 +55,7 @@ def tarea0():
     dm.load_timeseries()
     dm.compute()
     
-    # return
+    # return a list
     x = []
     x.append(np.round(dm.median,4))
     x.append(np.round(dm.var_95,4))
