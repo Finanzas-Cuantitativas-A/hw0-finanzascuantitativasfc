@@ -54,11 +54,13 @@ def tarea0():
     dm = file_classes.distribution_manager(inputs)
     dm.load_timeseries()
     dm.compute()
-    # prints
-    print(str(dm.median))
-    print(str(dm.var_95))
-    print(str(dm.is_normal))
-    return 
+    
+    # return
+    x = []
+    x.append(np.round(dm.median,4))
+    x.append(np.round(dm.var_95,4))
+    x.append(dm.is_normal,4)
+    return x
 
 
 #NO MODIFICAR
