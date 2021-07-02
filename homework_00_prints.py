@@ -55,9 +55,9 @@ def tarea0():
     dm.load_timeseries()
     dm.compute()
     # prints
-    print('ric ' + inputs.variable_name + ' | median = ' +  str(dm.median))
-    print('ric ' + inputs.variable_name + ' | VaR 95% = ' +  str(dm.var_95))
-    print('ric ' + inputs.variable_name + ' | is normal = ' +  str(dm.is_normal))
+    print(str(dm.median))
+    print(str(dm.var_95))
+    print(str(dm.is_normal))
     return 
 
 
