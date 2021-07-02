@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "Setup",
+      "setup": "",
+      "run": "sudo -H pip3 install setuptools wheel requests",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Test",
+      "setup": "sudo -H pip3 install setuptools wheel pytest requests numpy pandas matplotlib scipy",
+      "run": "pytest",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
