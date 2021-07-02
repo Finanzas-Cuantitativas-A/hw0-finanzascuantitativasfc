@@ -21,5 +21,5 @@ import homework_00_prints as hw;
 
 def test_1():
     assert hw.tarea0()[0] == 0.0006
-    assert hw.tarea0()[1] == -0.015768
+    assert hw.tarea0()[1] == -0.0158
     assert hw.tarea0()[2] == False
