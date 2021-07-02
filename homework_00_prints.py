@@ -59,7 +59,7 @@ def tarea0():
     x = []
     x.append(np.round(dm.median,4))
     x.append(np.round(dm.var_95,4))
-    x.append(dm.is_normal,4)
+    x.append(dm.is_normal)
     return x
 
 
